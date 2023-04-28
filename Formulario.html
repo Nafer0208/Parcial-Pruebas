@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <nav class="menuNavegacion">
+        <div class="link"><a href="index.html">Inicio</a></div>
+        <div class="link"><a href="Formulario.html">Formulario</a></div>
+        <div class="link"><a href="Departamentos.html">Departamentos</a></div>
+        <div class="link"><a href="LenguajesDeProgramacion.html">Lenguajes de programacion</a></div>
+    </nav>
+    <div id="formCenter">
+    <form action="" class="form">
+<div class="elements">
+    <h3>Formulario de registro para contrataci&oacute;n de servicio de internet</h3>
+        
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" id="nmbre" name="nombre" required size="30" class="input">
+            <label for="nombre">Nombre completo del contratante&nbsp;</label><br><br>
+    
+            <ion-icon name="id-card-outline"></ion-icon>
+            <input class="input" type="text" id="dui" name="dui" required maxlength="10" >
+            <label for="dui">DUI&nbsp;</label><br><br>
+    
+            <ion-icon name="call-outline"></ion-icon>
+            <input class="input" type="tel" id="tel" name="tel" required >
+            <label for="tel">Tel&eacute;fono&nbsp;</label><br><br>
+    
+            <ion-icon name="map-outline"></ion-icon>
+            <input class="input" type="text" id="dir" required size="30">
+            <label for="dir">Direcci&oacute; d&oacute;nde solicita el servicio&nbsp;</label><br><br>
+    
+            <label for="mdp">M&eacute;todo de pago:&nbsp;</label>&nbsp;&nbsp;
+            Efectivo<input class="input" type="radio" id="mdp" name="mdp" required>&nbsp;
+            Tarjeta de cr&eacute;dito/d&eacute;bito<input type="radio" id="mdp" name="mdp" required>&nbsp;
+            Transferencia bancaria<input class="input" type="radio" id="mdp" name="mdp" required><br><br>
+    
+            <label for="pac">Plan a contratar&nbsp;</label>
+            <select class="input" name="pac" id="pac" required>
+                <option value="20"  class="radioB">20Mbps</option>
+                <option value="50"  class="radioB">50Mbps</option>
+                <option value="100" class="radioB">100Mbps</option>
+            </select>
+            <br><br>
+    
+            <label for="ie">Indicaciones Extras&nbsp;</label><br>
+            <textarea class="input" name="ie" id="ie" cols="60" rows="4"></textarea><br><br>
+    
+            <input class="input boton" type="reset" value="Resetear">
+            <input class="input boton" type="submit" value="Guardar Datos">
+</div>
+    </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
